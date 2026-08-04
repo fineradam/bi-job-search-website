@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact BI Job Search</title>
+  <meta name="description" content="Contact BI Job Search with product questions, account enquiries, job-listing corrections or feedback." />
+  <link rel="canonical" href="https://bijobsearch.com/contact/" />
+
+  <meta property="og:title" content="Contact BI Job Search" />
+  <meta property="og:description" content="Contact BI Job Search with product questions, account enquiries, job-listing corrections or feedback." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bijobsearch.com/contact/" />
+
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand brand-logo" href="/" aria-label="BI Job Search homepage">
+      <img src="/assets/images/bi-job-search-logo.png" alt="BI Job Search" />
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="text-link desktop-only" href="https://app.bijobsearch.com/login">Sign in</a>
+      <a class="button button-primary button-small desktop-only" href="https://app.bijobsearch.com">
+        Search jobs
+      </a>
+      <button
+        class="mobile-menu-button"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >☰</button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+    <a href="https://app.bijobsearch.com/login">Sign in</a>
+    <a class="button button-primary" href="https://app.bijobsearch.com">Search jobs</a>
+  </nav>
+</header>
+
+  <main>
+    
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Contact</span>
+    <h1>Get in touch with BI Job Search.</h1>
+    <p class="lead">
+      Use this form for product questions, account enquiries, corrections or general feedback.
+    </p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container contact-layout">
+    <div>
+      <h2>How can we help?</h2>
+      <p class="lead">
+        Tell us what you need and include enough detail for us to understand the issue.
+      </p>
+      <div class="info-panel">
+        <h3 style="margin-top: 0;">Account or payment issue?</h3>
+        <p class="muted">
+          Include the email address associated with your BI Job Search account, but never send a password
+          or complete payment-card details.
+        </p>
+      </div>
+    </div>
+
+    <form
+      class="contact-form info-panel"
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      action="/contact/?submitted=true"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <p hidden>
+        <label>Do not fill this out: <input name="bot-field" /></label>
+      </p>
+
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required />
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+      </div>
+
+      <div class="form-row">
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+          <option>General question</option>
+          <option>Account support</option>
+          <option>Payment or Premium access</option>
+          <option>Job listing correction</option>
+          <option>Feedback</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <button class="button button-primary" type="submit">Send message</button>
+    </form>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-logo" href="/" aria-label="BI Job Search homepage">
+          <img src="/assets/images/bi-job-search-logo.png" alt="BI Job Search" />
+        </a>
+        <p>
+          A specialist job-search and market-intelligence platform built for Business Intelligence professionals.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Product</h3>
+        <a href="https://app.bijobsearch.com">Search jobs</a>
+        <a href="https://app.bijobsearch.com/skills-analysis">Skills Demand</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="https://app.bijobsearch.com/login">Sign in</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Company</h3>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Legal</h3>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms-of-use/">Terms of Use</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="current-year"></span> BI Job Search. All rights reserved.</span>
+      <span>Operated by Vitamin Business Intelligence SASU.</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

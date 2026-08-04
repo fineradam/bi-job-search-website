@@ -23,45 +23,32 @@
   <link rel="stylesheet" href="/assets/css/styles.css" />
 
   <style>
-    .proof-strip {
-      padding: 38px 0;
+.stats-strip {
+      padding: 26px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
     }
 
-    .proof-grid {
-      gap: 34px;
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      text-align: center;
     }
 
-    .proof-item {
-      grid-template-columns: 54px 1fr;
-      gap: 16px;
+    .stat strong {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--primary-dark);
+      font-size: clamp(1.55rem, 3vw, 2.25rem);
+      line-height: 1;
     }
 
-    .proof-icon {
-      width: 54px;
-      height: 54px;
-      border-radius: 16px;
-      font-size: 1.3rem;
-    }
-
-    .proof-item strong {
-      margin-bottom: 5px;
-      font-size: 1.15rem;
-      line-height: 1.2;
-    }
-
-    .proof-item span {
+    .stat span {
+      color: var(--muted);
       font-size: 0.9rem;
-      line-height: 1.5;
-    }
-
-    @media (max-width: 760px) {
-      .proof-strip {
-        padding: 30px 0;
-      }
-
-      .proof-grid {
-        gap: 22px;
-      }
+      font-weight: 700;
     }
   </style>
 
@@ -188,35 +175,23 @@
       </div>
     </section>
 
-    <section class="proof-strip" aria-label="Why BI Job Search is different">
-      <div class="container proof-grid">
-        <div class="proof-item">
-          <div class="proof-icon">✓</div>
-          <div>
-            <strong>Genuine BI jobs</strong>
-            <span>BI-specific classification filters out loosely related roles.</span>
-          </div>
+    <section class="stats-strip" aria-label="Why BI Job Search is different">
+      <div class="container stats-grid">
+        <div class="stat">
+          <strong>Genuine BI jobs</strong>
+          <span>BI-specific classification filters out loosely related roles.</span>
         </div>
-        <div class="proof-item">
-          <div class="proof-icon">120+</div>
-          <div>
-            <strong>Skills analysed</strong>
-            <span>Skills are extracted and categorised from every job description.</span>
-          </div>
+        <div class="stat">
+          <strong>120+ skills</strong>
+          <span>Skills are extracted and categorised from every job description.</span>
         </div>
-        <div class="proof-item">
-          <div class="proof-icon">%</div>
-          <div>
-            <strong>Skills matching</strong>
-            <span>Premium shows how closely each job matches your profile.</span>
-          </div>
+        <div class="stat">
+          <strong>Skills matching</strong>
+          <span>Premium shows how closely each job matches your profile.</span>
         </div>
-        <div class="proof-item">
-          <div class="proof-icon">↗</div>
-          <div>
-            <strong>Saved searches and alerts</strong>
-            <span>Premium sends newly matching jobs daily or weekly.</span>
-          </div>
+        <div class="stat">
+          <strong>Saved searches and alerts</strong>
+          <span>Premium sends newly matching jobs daily or weekly.</span>
         </div>
       </div>
     </section>

@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Contact BI Job Search</title>
-  <meta name="description" content="Contact BI Job Search with product questions, account enquiries, job-listing corrections or feedback." />
-  <link rel="canonical" href="https://bijobsearch.com/contact/" />
+  <title>Message Sent | BI Job Search</title>
+  <meta name="description" content="Thank you for contacting BI Job Search. Your message has been sent." />
+  <link rel="canonical" href="https://bijobsearch.com/thank-you/" />
 
-  <meta property="og:title" content="Contact BI Job Search" />
-  <meta property="og:description" content="Contact BI Job Search with product questions, account enquiries, job-listing corrections or feedback." />
+  <meta property="og:title" content="Message Sent | BI Job Search" />
+  <meta property="og:description" content="Thank you for contacting BI Job Search. Your message has been sent." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://bijobsearch.com/contact/" />
+  <meta property="og:url" content="https://bijobsearch.com/thank-you/" />
 
   <link rel="stylesheet" href="/assets/css/styles.css" />
   
@@ -51,77 +51,30 @@
 </header>
 
   <main>
-    
-<section class="page-hero">
-  <div class="container">
-    <span class="eyebrow">Contact</span>
-    <h1>Get in touch with BI Job Search.</h1>
-    <p class="lead">
-      Use this form for product questions, account enquiries, corrections or general feedback.
-    </p>
-  </div>
-</section>
-
-<section class="content-section">
-  <div class="container contact-layout">
-    <div>
-      <h2>How can we help?</h2>
-      <p class="lead">
-        Tell us what you need and include enough detail for us to understand the issue.
-      </p>
-      <div class="info-panel">
-        <h3 style="margin-top: 0;">Account or payment issue?</h3>
-        <p class="muted">
-          Include the email address associated with your BI Job Search account, but never send a password
-          or complete payment-card details.
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Message sent</span>
+        <h1>Thanks for getting in touch.</h1>
+        <p class="lead">
+          Your message has been sent to BI Job Search. We’ll review it and get back to you as soon as possible.
         </p>
       </div>
-    </div>
+    </section>
 
-    <form
-      class="contact-form info-panel"
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-      action="/thank-you/"
-    >
-      <input type="hidden" name="form-name" value="contact" />
-      <p hidden>
-        <label>Do not fill this out: <input name="bot-field" /></label>
-      </p>
-
-      <div class="form-row">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" autocomplete="name" required />
+    <section class="content-section">
+      <div class="content-narrow">
+        <div class="info-panel" style="text-align: center;">
+          <h2 style="margin-top: 0;">What would you like to do next?</h2>
+          <p class="muted" style="max-width: 620px; margin: 0 auto 26px;">
+            You can return to the website or continue to the BI Job Search application.
+          </p>
+          <div class="hero-actions" style="justify-content: center; margin-bottom: 0;">
+            <a class="button button-secondary" href="/">Return to homepage</a>
+            <a class="button button-primary" href="https://app.bijobsearch.com">Search BI jobs</a>
+          </div>
+        </div>
       </div>
-
-      <div class="form-row">
-        <label for="email">Email address</label>
-        <input id="email" name="email" type="email" autocomplete="email" required />
-      </div>
-
-      <div class="form-row">
-        <label for="topic">Topic</label>
-        <select id="topic" name="topic">
-          <option>General question</option>
-          <option>Account support</option>
-          <option>Payment or Premium access</option>
-          <option>Job listing correction</option>
-          <option>Feedback</option>
-        </select>
-      </div>
-
-      <div class="form-row">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
-
-      <button class="button button-primary" type="submit">Send message</button>
-    </form>
-  </div>
-</section>
-
+    </section>
   </main>
 
   <footer class="site-footer">

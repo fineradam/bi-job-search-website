@@ -28,3 +28,21 @@ the Netlify dashboard.
 The Privacy Policy and Terms of Use are practical first drafts. They should be reviewed and completed
 against the application's actual analytics, authentication, email, payment, cookie and data-retention
 practices before relying on them as final legal documents.
+
+
+## Navigation
+
+The shared header now contains only About and Contact, alongside the Sign in and Search jobs actions.
+The same header markup is copied into all five HTML files.
+
+
+## Analytics and consent
+
+The site includes a custom consent banner for GA4 measurement ID `G-VMDF171NN4`.
+
+- Analytics is denied by default.
+- GA4 loads only after acceptance.
+- Visitors can reject analytics with equal prominence.
+- The choice is stored in localStorage.
+- Cookie settings can be reopened from the footer.
+- Advertising consent remains denied.

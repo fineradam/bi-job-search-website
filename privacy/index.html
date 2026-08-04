@@ -91,6 +91,23 @@
       security and comply with legal obligations.
     </p>
 
+    
+    <h2>Google Analytics</h2>
+    <p>
+      With your consent, this website uses Google Analytics 4 to understand how visitors use the
+      site. Google Analytics may process information such as pages viewed, approximate location,
+      device and browser details, referral source and interactions with the website.
+    </p>
+    <p>
+      Analytics storage is denied by default. Google Analytics is loaded only after you select
+      “Accept analytics.” You can withdraw or change your choice at any time using the
+      “Cookie settings” link in the footer.
+    </p>
+    <p>
+      The Google Analytics measurement ID used on this website is G-VMDF171NN4. Advertising
+      storage, ad personalisation and ad-user-data consent remain disabled.
+    </p>
+
     <h2>Service providers</h2>
     <p>
       The website is hosted through Netlify. Information submitted through a Netlify form may be processed
@@ -154,6 +171,7 @@
         <h3>Legal</h3>
         <a href="/privacy/">Privacy Policy</a>
         <a href="/terms-of-use/">Terms of Use</a>
+        <button class="cookie-settings-link" type="button">Cookie settings</button>
       </div>
     </div>
 
@@ -163,6 +181,24 @@
     </div>
   </div>
 </footer>
+
+  <aside
+    class="cookie-banner"
+    id="cookie-banner"
+    role="dialog"
+    aria-labelledby="cookie-title"
+    hidden
+  >
+    <h2 id="cookie-title">Analytics cookies</h2>
+    <p>
+      We use Google Analytics to understand how visitors use this website. Analytics loads only
+      after you accept. You can change your choice later through Cookie settings.
+    </p>
+    <div class="cookie-actions">
+      <button class="button button-secondary" id="reject-analytics" type="button">Reject analytics</button>
+      <button class="button button-primary" id="accept-analytics" type="button">Accept analytics</button>
+    </div>
+  </aside>
 
   <script src="/assets/js/main.js" defer></script>
 </body>

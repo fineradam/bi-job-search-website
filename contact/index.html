@@ -154,6 +154,7 @@
         <h3>Legal</h3>
         <a href="/privacy/">Privacy Policy</a>
         <a href="/terms-of-use/">Terms of Use</a>
+        <button class="cookie-settings-link" type="button">Cookie settings</button>
       </div>
     </div>
 
@@ -163,6 +164,24 @@
     </div>
   </div>
 </footer>
+
+  <aside
+    class="cookie-banner"
+    id="cookie-banner"
+    role="dialog"
+    aria-labelledby="cookie-title"
+    hidden
+  >
+    <h2 id="cookie-title">Analytics cookies</h2>
+    <p>
+      We use Google Analytics to understand how visitors use this website. Analytics loads only
+      after you accept. You can change your choice later through Cookie settings.
+    </p>
+    <div class="cookie-actions">
+      <button class="button button-secondary" id="reject-analytics" type="button">Reject analytics</button>
+      <button class="button button-primary" id="accept-analytics" type="button">Accept analytics</button>
+    </div>
+  </aside>
 
   <script src="/assets/js/main.js" defer></script>
 </body>

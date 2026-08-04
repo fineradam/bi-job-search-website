@@ -1546,3 +1546,69 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Cookie consent */
+.cookie-banner {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 1000;
+  width: min(430px, calc(100% - 32px));
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.22);
+}
+
+.cookie-banner[hidden] { display: none; }
+
+.cookie-banner h2 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+.cookie-banner p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.cookie-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.cookie-actions .button {
+  width: 100%;
+  min-height: 44px;
+}
+
+.cookie-settings-link {
+  padding: 0;
+  border: 0;
+  color: var(--muted);
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.cookie-settings-link:hover { color: var(--primary); }
+
+@media (max-width: 520px) {
+  .cookie-banner {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .cookie-actions {
+    grid-template-columns: 1fr;
+  }
+}

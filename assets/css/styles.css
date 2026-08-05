@@ -893,9 +893,9 @@
 
     .brand-logo img {
       display: block;
-      width: 220px;
+      width: 250px;
       height: auto;
-      max-height: 52px;
+      max-height: 58px;
       object-fit: contain;
       object-position: left center;
     }
@@ -1260,7 +1260,7 @@
     }
 
     @media (max-width: 980px) {
-      .brand-logo img { width: 190px; }
+      .brand-logo img { width: 210px; }
 
       .desktop-nav,
       .header-actions .button-text {

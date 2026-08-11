@@ -1,5 +1,5 @@
 .jobs-hero {
-  padding: 72px 0 54px;
+  padding: 64px 0 34px;
   background:
     radial-gradient(circle at 82% 8%, rgba(37, 99, 235, 0.13), transparent 34%),
     linear-gradient(180deg, #fbfcff 0%, #f7f9fc 100%);
@@ -26,7 +26,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  margin-top: 34px;
+  margin-top: 26px;
 }
 
 .market-stat {

@@ -105,11 +105,16 @@ async function getCities() {
     if (!entry.isDirectory()) continue;
     const file = path.join(JOBS_ROOT, entry.name, 'index.html');
     const html = await readFile(file, 'utf8');
-    const match = html.match(/<h1>Business Intelligence Jobs in ([\s\S]*?)<\/h1>/);
-    if (!match) continue;
-    cities.push({ slug: entry.name, label: match[1] });
+    const labelMatch = html.match(/<h1>Business Intelligence Jobs in ([\s\S]*?)<\/h1>/);
+    if (!labelMatch) continue;
+    const countMatch = html.match(/<div class="market-stat"><strong>(\d+)<\/strong><span>active BI jobs<\/span><\/div>/);
+    cities.push({
+      slug: entry.name,
+      label: labelMatch[1],
+      count: countMatch ? Number(countMatch[1]) : 0
+    });
   }
-  return cities;
+  return cities.sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 }
 
 async function enhanceFile(filePath, cities, citySlug = null) {

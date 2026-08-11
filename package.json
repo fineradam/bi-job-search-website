@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "generate:jobs": "node scripts/generate-city-pages.mjs",
-    "build": "npm run generate:jobs"
+    "format:locations": "node scripts/format-us-location-labels.mjs",
+    "build": "npm run generate:jobs && npm run format:locations"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4"

@@ -168,12 +168,52 @@
   max-width: 850px;
 }
 
+.city-link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.city-link-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(39, 50, 86, 0.04);
+}
+
+.city-link-card strong {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.city-link-card span {
+  color: var(--primary-dark);
+  font-size: 0.86rem;
+  font-weight: 750;
+}
+
+.city-link-card:hover {
+  border-color: rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+.city-links-action {
+  margin-top: 24px;
+  text-align: center;
+}
+
 @media (max-width: 860px) {
   .jobs-layout {
     grid-template-columns: 1fr;
   }
 
-  .market-stats {
+  .market-stats,
+  .city-link-grid {
     grid-template-columns: 1fr;
   }
 }

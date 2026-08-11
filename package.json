@@ -1,0 +1,12 @@
+{
+  "name": "bi-job-search-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:jobs": "node scripts/generate-city-pages.mjs",
+    "build": "npm run generate:jobs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4"
+  }
+}

@@ -4,10 +4,11 @@
   "type": "module",
   "scripts": {
     "generate:jobs": "node scripts/generate-city-pages.mjs",
+    "generate:intents": "node scripts/generate-intent-pages.mjs",
     "format:locations": "node scripts/format-us-location-labels.mjs",
     "enhance:links": "node scripts/enhance-internal-links.mjs",
     "clean:public": "node scripts/clean-public-job-pages.mjs",
-    "build": "npm run generate:jobs && npm run format:locations && npm run enhance:links && npm run clean:public"
+    "build": "npm run generate:jobs && npm run generate:intents && npm run format:locations && npm run enhance:links && npm run clean:public"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4"
